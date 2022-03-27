@@ -1,0 +1,20 @@
+## 应用名称
+#spring.application.name=estate-managerment
+## 应用服务 WEB 访问端口
+#server.port=8080
+
+
+server:
+  port: 8888 #项目启动访问端口
+spring:
+  application:
+    name: estate-management
+  datasource: #连接数据库配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/feiyan-estate?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1156989490
+  servlet:
+    multipart: #文件上传配置
+      max-file-size: 10MB
+      max-request-size: 50MB
